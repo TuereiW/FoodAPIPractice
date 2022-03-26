@@ -6,7 +6,7 @@
     initial-scale="1.0">
     <title> Recipe generator: Backwards Design </title>
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
    
    
     <link rel = "stylesheet" href = "style.css">
@@ -18,16 +18,24 @@
         <div class = "container">
             <div class = "meal-wrapper">
                 <div class = "meal-search">
-                    <h2 class = "title"> Find Meals with the Ingredients you ALREADY have! </h2>
-                    <blockquote> <i>"Food is our common ground, a universal experience."<br></i>                
+                    <h2 class = "title"> Help is here! </h2>
+                    <blockquote> <i>"Courage is resistance to fear, mastery of fear—not absence of fear."<br></i>                
                         </blockquote>
 
                     <div class = "meal-search-box">
-                        <input type ="text" class ="search-content"
-                        placeholder= "Enter what you have " id= 
-                        "search-input">
-                        <button type = "submit" class ="search-btn btn" id= "search-btn"
-
+                        <form action="/action_page.php">
+                        <label for="">Choose a Facility Type:</label>
+                        <select name="facility" id="facility">
+                          <option value="health">Health Facilities</option>
+                          <option value="benefits">Benefits Facilities </option>
+                          <option value="cemeteries">Cemeteries </option>
+                          <option value="vet-centers">Vet Centers</option>
+                        </select>
+                        <br><br>
+                        <input type="submit" class="Submit" placeholder= "Find support" >
+                      </form>
+                      
+                    
                     </div>
 
 
